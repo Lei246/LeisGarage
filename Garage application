@@ -18,7 +18,7 @@ int sizeGarage = 0;
 string SearchIn = "";
 
 
-//base class
+//Base class
 class Vehicle
 {
 protected:
@@ -56,7 +56,7 @@ public:
 };
 
 
-//inherited class
+//Inherited class
 class Car : public Vehicle {
 public:
 	string make;
@@ -238,7 +238,7 @@ public:
 };
 
 
-//class holds for functionality of vehicles
+//Class holds for functionality of vehicles
 class Garage
 {
 protected:
@@ -448,7 +448,7 @@ public:
 
 
 
-//maintainess of the ganarage
+//Maintainess of the ganarage
 int main()
 {
 	int selection;
@@ -458,7 +458,7 @@ int main()
 	cout << endl;
 	Garage garage;
 
-   //initiate 5 vehicles in the garage
+   //Initiate 5 vehicles in the garage
 	Vehicle* ptrBicycle = new Bicycle("BIC100", "Green"," ", 2, 1, "Electricity");
 	garage.addVehicle(ptrBicycle);
 	Vehicle* ptrMotorcycle = new Motorcycle("MOT150", "Black"," ", 2, "Honda", "Sport");
